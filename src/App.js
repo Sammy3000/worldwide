@@ -18,7 +18,7 @@ function App() {
         />
         <Route
           path="/:code"
-          element={CountryDetail}
+          element={<CountryDetail />}
         />
       </Route>
     </Routes>
