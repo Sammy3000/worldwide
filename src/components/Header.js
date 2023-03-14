@@ -1,15 +1,17 @@
 import React from 'react';
 import styles from '../styles/Header.module.css';
-import { Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
 const Header = () => {
   return (
     <>
       <header className={styles.headNav}>
         <div>
-          <i
-            className="fa fa-angle-left"
-            aria-hidden="true"
-          ></i>
+          <Link to="/">
+            <i
+              className="fa fa-angle-left"
+              aria-hidden="true"
+            ></i>
+          </Link>
           2015
         </div>
         <h3>Most Views</h3>
