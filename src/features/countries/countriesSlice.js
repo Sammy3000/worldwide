@@ -6,7 +6,7 @@ export const getCountries = createAsyncThunk(
   async () => {
     const result = await fetch('https://restcountries.com/v2/all');
     return result.json();
-  }
+  },
 );
 
 const countriesSlice = createSlice({
