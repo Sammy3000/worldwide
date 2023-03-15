@@ -1,27 +1,26 @@
-import './App.css';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Countries from './components/pages/Countries';
+import Country from './components/pages/Country';
 import Header from './components/Header';
-import Home from './pages/Home';
-import CountryDetail from './pages/CountryDetail';
 
 function App() {
   return (
-    <Routes>
-      <Route
-        exact
-        path="/"
-        element={<Header />}
-      >
+    <div>
+      <Header />
+      <Routes>
         <Route
-          index
-          element={<Home />}
+          exact
+          path="/"
+          element={<Country />}
         />
+
         <Route
-          path="/:code"
-          element={<CountryDetail />}
+          path="/countries/:alpha3Code"
+          element={<Countries />}
         />
-      </Route>
-    </Routes>
+      </Routes>
+    </div>
   );
 }
 

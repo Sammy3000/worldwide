@@ -1,85 +1,35 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-
-// Show all countries
-
-export const showCountries = createAsyncThunk(
-  'countries/showCountries',
-  async (_, thunkAPI) => {
-    try {
-      const response = await axios(`https://restcountries.com/v3.1/all`);
-      return response.data;
-    } catch (error) {
-      const message = (error.response && error.response.data) || error.message;
-      return thunkAPI.rejectWithValue(message);
-    }
-  }
-);
-//Search by cioc code
-
-export const searchByCode = createAsyncThunk(
-  'countries/searchByCode',
-  async (code, thunkAPI) => {
-    try {
-      const response = await axios.get(
-        `https://restcountries.com/v3.1/alpha/${code}`
-      );
-      return response.data;
-    } catch (error) {
-      const message = (error.response && error.response.data) || error.message;
-      return thunkAPI.rejectWithValue(message);
-    }
+export const getCountries = createAsyncThunk(
+  'countries/getCountries',
+  async () => {
+    const result = await axios(`https://restcountries.com/v2/all`);
+    return result.data;
   }
 );
 
-const initialState = {
-  loading: false,
-  countriesData: [],
-  countrySearched: [],
-  error: false,
-  success: false,
-  message: '',
-  searchTerm: '',
-};
 const countriesSlice = createSlice({
   name: 'countries',
-  initialState,
-  reducers: {
-    setSearchTerm: (state, action) => {
-      state.searchTerm = action.payload;
-    },
+  initialState: {
+    loading: false,
+    error: null,
+    countries: [],
   },
+  reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(showCountries.pending, (state) => {
+      .addCase(getCountries.pending, (state) => {
         state.loading = true;
       })
-      .addCase(showCountries.fulfilled, (state, action) => {
+      .addCase(getCountries.fulfilled, (state, action) => {
         state.loading = false;
-        state.countriesData = action.payload;
-        state.success = true;
+        state.countries = action.payload;
       })
-      .addCase(showCountries.rejected, (state, action) => {
+      .addCase(getCountries.rejected, (state, action) => {
         state.loading = false;
-        state.error = true;
-        state.message = action.payload;
-        state.countriesData = [];
-      })
-      .addCase(searchByCode.pending, (state) => {
-        state.loading = true;
-      })
-      .addCase(searchByCode.fulfilled, (state, action) => {
-        state.loading = false;
-        state.countrySearched = action.payload;
-        state.success = true;
-      })
-      .addCase(searchByCode.rejected, (state, action) => {
-        state.loading = false;
-        state.error = true;
-        state.message = action.payload;
-        state.countrySearched = [];
+        state.error = action.error;
       });
   },
 });
-export const { setSearchTerm } = countriesSlice.actions;
+
 export default countriesSlice.reducer;

@@ -1,34 +1,22 @@
-import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { MdChevronLeft } from 'react-icons/md';
+import { FaMicrophone, FaCog } from 'react-icons/fa';
 import styles from '../styles/Header.module.css';
-import { Outlet, Link } from 'react-router-dom';
-const Header = () => {
-  return (
-    <>
-      <header className={styles.headNav}>
-        <div>
-          <Link to="/">
-            <i
-              className="fa fa-angle-left"
-              aria-hidden="true"
-            ></i>
-          </Link>
-          2015
-        </div>
-        <h3>Most Views</h3>
-        <div>
-          <i
-            className="fa fa-microphone"
-            aria-hidden="true"
-          />
-          <i
-            className="fa fa-cog"
-            aria-hidden="true"
-          ></i>
-        </div>
-      </header>
-      <Outlet />
-    </>
-  );
-};
+
+const Header = () => (
+  <div className={styles.display__flex}>
+    <NavLink to="/">
+      <MdChevronLeft size={45} />{' '}
+    </NavLink>
+
+    <div className={styles.header}>
+      <h1 className={styles.page__header}>Country Stats</h1>
+    </div>
+    <div className={styles.icons}>
+      <FaMicrophone size={20} />
+      <FaCog size={20} />
+    </div>
+  </div>
+);
 
 export default Header;
