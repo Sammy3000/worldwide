@@ -49,6 +49,13 @@ To get a local copy up and running, follow these steps.
 - `npm install` To download all the dependancies of the project
 - Use `npm start` to run the app in your browser
 
+<!-- VIDEO WALKTHROUGH -->
+
+## 🚀 VIDEO WALKTHROUGH <a name="live-demo"></a>
+
+- [Walkthrough link]()
+
+
 ### Prerequisites
 
 In order to run this project you need:
