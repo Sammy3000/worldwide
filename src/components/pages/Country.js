@@ -18,9 +18,7 @@ function Country() {
 
   React.useEffect(() => {
     setFilteredCountries(
-      countries.filter((country) =>
-        country.name.toLowerCase().includes(searchTerm.toLowerCase())
-      )
+      countries.filter((country) => country.name.toLowerCase().includes(searchTerm.toLowerCase())),
     );
   }, [countries, searchTerm]);
 

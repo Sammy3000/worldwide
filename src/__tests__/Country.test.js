@@ -14,7 +14,7 @@ it('renders correctly', () => {
             <Country />
           </Route>
         </Router>
-      </Provider>
+      </Provider>,
     )
     .toJSON();
   expect(data).toMatchSnapshot();

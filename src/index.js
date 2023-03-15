@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import Store from './features/Store';
 import { Provider } from 'react-redux';
+import Store from './features/Store';
 import './index.css';
 import App from './App';
 
@@ -14,5 +14,5 @@ root.render(
         <App />
       </Provider>
     </BrowserRouter>
-  </React.StrictMode>
+  </React.StrictMode>,
 );

@@ -4,9 +4,9 @@ import axios from 'axios';
 export const getCountries = createAsyncThunk(
   'countries/getCountries',
   async () => {
-    const result = await axios(`https://restcountries.com/v2/all`);
+    const result = await axios('https://restcountries.com/v2/all');
     return result.data;
-  }
+  },
 );
 
 const countriesSlice = createSlice({

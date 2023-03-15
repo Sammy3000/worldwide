@@ -11,7 +11,7 @@ const Countries = () => {
   const alpha3Code = useParams().alpha3Code || '';
 
   const selectedCountry = countries.find(
-    (country) => country.alpha3Code === alpha3Code
+    (country) => country.alpha3Code === alpha3Code,
   );
 
   if (!selectedCountry) {
@@ -55,27 +55,38 @@ const Countries = () => {
         animate="visible"
       >
         <motion.li variants={listItemVariants}>
-          <strong>Timezone:</strong> {selectedCountry.timezones}
+          <strong>Timezone:</strong>
+          {' '}
+          {selectedCountry.timezones}
         </motion.li>
         <motion.li variants={listItemVariants}>
-          <strong>Capital:</strong> {selectedCountry.capital}
+          <strong>Capital:</strong>
+          {' '}
+          {selectedCountry.capital}
         </motion.li>
         <motion.li variants={listItemVariants}>
-          <strong>Population:</strong>{' '}
+          <strong>Population:</strong>
+          {' '}
           {selectedCountry.population.toLocaleString()}
         </motion.li>
         <motion.li variants={listItemVariants}>
-          <strong>Area:</strong> {selectedCountry.area.toLocaleString()} km
+          <strong>Area:</strong>
+          {' '}
+          {selectedCountry.area.toLocaleString()}
+          {' '}
+          km
           <sup>2</sup>
         </motion.li>
         <motion.li variants={listItemVariants}>
-          <strong>Languages:</strong>{' '}
+          <strong>Languages:</strong>
+          {' '}
           {selectedCountry.languages
             .map((language) => language.name)
             .join(', ')}
         </motion.li>
         <motion.li variants={listItemVariants}>
-          <strong>Currencies:</strong>{' '}
+          <strong>Currencies:</strong>
+          {' '}
           {selectedCountry.currencies
             .map((currency) => currency.name)
             .join(', ')}

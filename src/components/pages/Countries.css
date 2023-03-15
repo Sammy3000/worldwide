@@ -31,6 +31,7 @@ ul {
 .selected-country-details-content li:nth-child(odd) {
   background-color: #bd2459;
 }
+
 .selected-country-details-content li:nth-child(even) {
   color: black;
 }

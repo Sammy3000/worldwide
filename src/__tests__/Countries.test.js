@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
-import Store from '../features/Store';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Store from '../features/Store';
 import Countries from '../components/pages/Countries';
 
 it('renders correctly', () => {
@@ -14,7 +14,7 @@ it('renders correctly', () => {
             <Countries />
           </Route>
         </Router>
-      </Provider>
+      </Provider>,
     )
     .toJSON();
   expect(data).toMatchSnapshot();

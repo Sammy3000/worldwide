@@ -6,7 +6,8 @@ import styles from '../styles/Header.module.css';
 const Header = () => (
   <div className={styles.display__flex}>
     <NavLink to="/">
-      <MdChevronLeft size={45} />{' '}
+      <MdChevronLeft size={45} />
+      {' '}
     </NavLink>
 
     <div className={styles.header}>
