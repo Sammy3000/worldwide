@@ -32,6 +32,11 @@
 
 **Worldwide** app showing list of countries fetched from an external API. User can can click on a country to view all information they need. User can also search for a country directly using a search …
 
+## Screenshots
+
+![](./src/assets/desktop.PNG)
+![](./src/assets/mobile.PNG)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 - ![Redux](https://img.shields.io/badge/-Redux-1d1919?style=flat&logo=redux)
@@ -55,7 +60,6 @@ To get a local copy up and running, follow these steps.
 
 - [Walkthrough link]()
 
-
 ### Prerequisites
 
 In order to run this project you need:
@@ -71,7 +75,6 @@ In order to run this project you need:
 - Search for country by name
 - View selected country's details
 - Transition effects on country info.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
