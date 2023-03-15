@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
+
 export const getCountries = createAsyncThunk(
   'countries/getCountries',
   async () => {
