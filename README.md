@@ -60,6 +60,11 @@ In order to run this project you need:
 ### Key Features <a name="key-features"></a>
 
 - **Fetching data from Api with createAsyncThunk and render on pages**
+- Display country info
+- Search for country by name
+- View selected country's details
+- Transition effects on country info.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -132,7 +137,8 @@ Test this app by runing:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add extra pages**
+- [ ] **Filter countries by region**
+- [ ] **Navigate to border country on clicking**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
