@@ -55,10 +55,10 @@ const Countries = () => {
         animate="visible"
       >
         <motion.li variants={listItemVariants}>
-          <strong>Capital:</strong> {selectedCountry.capital}
+          <strong>Timezone:</strong> {selectedCountry.timezones}
         </motion.li>
         <motion.li variants={listItemVariants}>
-          <strong>Timezones:</strong> {selectedCountry.timezones}
+          <strong>Capital:</strong> {selectedCountry.capital}
         </motion.li>
         <motion.li variants={listItemVariants}>
           <strong>Population:</strong>{' '}
