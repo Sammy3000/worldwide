@@ -58,7 +58,7 @@ To get a local copy up and running, follow these steps.
 
 ## 🚀 VIDEO WALKTHROUGH <a name="live-demo"></a>
 
-- [Walkthrough link]()
+- [Walkthrough link](https://drive.google.com/file/d/1Zn8DA2EOfnQ61gLU9t7_jPZ9jCAb7mvT/view?usp=sharing)
 
 ### Prerequisites
 
