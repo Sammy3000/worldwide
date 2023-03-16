@@ -5,6 +5,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
+- [📖 Space Mission App ](#-space-mission-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
   - [💻 Getting Started ](#-getting-started-)
@@ -32,18 +33,19 @@
 
 **Worldwide** app showing list of countries fetched from an external API. User can can click on a country to view all information they need. User can also search for a country directly using a search …
 
-## Screenshots
-
-![](./src/assets/desktop.PNG)
-![](./src/assets/mobile.PNG)
-
 ## 🛠 Built With <a name="built-with"></a>
 
-- ![Redux](https://img.shields.io/badge/-Redux-1d1919?style=flat&logo=redux)
-- ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
-- ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6)
-- ![HTML](https://img.shields.io/badge/-HTML-000000?style=flat&logo=html)
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Build With</summary>
+  <ul>
+    <li><a href="https://html.com/">HTML</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+</details>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -53,12 +55,6 @@ To get a local copy up and running, follow these steps.
 - cd /rocket-mission-react
 - `npm install` To download all the dependancies of the project
 - Use `npm start` to run the app in your browser
-
-<!-- VIDEO WALKTHROUGH -->
-
-## 🚀 VIDEO WALKTHROUGH <a name="live-demo"></a>
-
-- [Walkthrough link](https://drive.google.com/file/d/1Zn8DA2EOfnQ61gLU9t7_jPZ9jCAb7mvT/view?usp=sharing)
 
 ### Prerequisites
 
@@ -71,16 +67,12 @@ In order to run this project you need:
 ### Key Features <a name="key-features"></a>
 
 - **Fetching data from Api with createAsyncThunk and render on pages**
-- Display country info
-- Search for country by name
-- View selected country's details
-- Transition effects on country info.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- See it live by clicking [Live Demo Link](https://towettsammy-worldwide.onrender.com/)
+- See it live by clicking [Live Demo Link]()
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -147,8 +139,7 @@ Test this app by runing:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Filter countries by region**
-- [ ] **Navigate to border country on clicking**
+- [ ] **Add extra pages**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,9 +159,7 @@ Give a ⭐️ if you like this project and share it with your friends.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Original design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 - I would like to thank my Microverse partners.
-- Hat tip to code reviewers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
