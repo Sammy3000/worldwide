@@ -168,6 +168,7 @@ Give a ⭐️ if you like this project and share it with your friends.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
+- Original design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 - I would like to thank my Microverse partners.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
