@@ -170,6 +170,7 @@ Give a ⭐️ if you like this project and share it with your friends.
 
 - Original design by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 - I would like to thank my Microverse partners.
+- Hat tip to code reviewers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
